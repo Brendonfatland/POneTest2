@@ -1,0 +1,20 @@
+﻿body {
+}
+.darkSide {
+color: wheat;
+
+}
+h2 {
+color: black;
+
+}
+
+.Drimage {
+    width: 100%;
+    z-index: -2;
+}
+
+.Mainsection {
+    background: white;
+    opacity: .9;
+}
