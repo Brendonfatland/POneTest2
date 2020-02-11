@@ -3,19 +3,24 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@Styles.Render("~/Content/DentistStyle.css") 
+
+<div class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/7WX9yKKfF0M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="text-center"></iframe></div>
+
 <div class="row">
-    
+
     <div class="col-md-3"></div>
     <div class="col-md-6 ">
         <h2 class="text-center">Dentist Information from Database</h2>
         @foreach (var item in Model)
         {
-            <p>@item.Id </p>
-            <p>FirstName:  @item.FirstName</p>
-            <p>LastName:  @item.LastName</p>
-            <p>Address:  @item.Address</p>
-            <p>StaffFullName:  @item.StaffFullName</p>
+            <p class="Pid">@item.Id </p>
+            <p class="FirstName">FirstName:  @item.FirstName</p>
+            <p class="LastName">LastName:  @item.LastName</p>
+            <p class="Address">Address:  @item.Address</p>
+            <p class="StaffFullName">StaffFullName:  @item.StaffFullName</p>
         }
+        <p class="Pid">asdf </p>
 
     </div>
     <div class="col-md-3"></div>

@@ -3,10 +3,15 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@Styles.Render("~/Content/DrBobStyle.css")
+
+<img src="~/Content/images/Doctor.jpg"  class="navbar navbar-inverse navbar-fixed-top Drimage"/>
+
 <div class="row">
 
     <div class="col-md-3"></div>
-    <div class="col-md-6 ">
+    <div class="col-md-6 Mainsection">
+
         <h2 class="text-center">Dr.Bob's Information from Database</h2>
         @foreach (var item in Model)
         {
@@ -16,6 +21,7 @@
             <p>Address:  @item.Address</p>
             <p>StaffFullName:  @item.StaffFullName</p>
         }
+            <div class="darkSide">Dr Bob is a Doctor. </div>
 
     </div>
     <div class="col-md-3"></div>
